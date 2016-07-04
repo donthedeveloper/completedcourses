@@ -1,0 +1,365 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400italic|Alegreya+Sans:400,400italic|Alegreya:400italic,900italic);
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f6f4ec;
+	color: #282932;
+	font-family: 'Alegreya Sans', Verdana, Tahoma, sans-serif;
+	font-size: 1.25em;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Alegreya', Georgia, serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 3.157rem;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 2.369rem;
+	line-height: 1.15;
+	margin: 1.15em 0;
+}
+
+h3 {
+	font-size: 1.777rem; /* 35.54px */
+	line-height: 1.8008em; /* 64px */
+	margin-top: .9004em;
+	margin-bottom: 0.0000em;
+}
+
+h4 {
+	font-size: 1.333em;
+}
+
+.course_body p {
+	margin-top: 0;
+	margin-bottom: 0.0000em;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header {
+	padding: 10em 4%;
+	text-align: center;
+}
+header h1 {
+	font-size: 7.8rem;
+	font-weight: 900;
+	margin: 0;
+}
+header h2 {
+	color: #9bc152;
+	font-family: 'Alegreya Sans', Verdana, Tahoma, sans-serif;
+	font-size: 1.777em;
+	font-style: normal;
+	letter-spacing: .3em;
+	margin-top: .1em;
+	text-transform: uppercase;
+}
+.nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	border: 2px solid #f6f4ec;
+}
+
+.nav li {
+	float: left;
+	text-align: center;
+	display: inline-block;
+	width: 25%;
+	margin: 0;
+}
+.nav li button {
+	border: 4px solid #f6f4ec;
+	font-weight: bold;
+	width: 100%;
+	background-color: #9bc152;
+	padding: 1rem 0;
+	letter-spacing: .05em;
+	color: #f6f4ec;
+}
+
+.nav li:nth-of-type(-2n+4) button,
+.nav li:nth-last-of-type(-2n+4) button {
+	background-color: #81a53d;
+}
+.nav li:hover button {
+	background-color: #f6f4ec;
+	color: #9bc152;
+}
+
+#selected {
+	background-color: #f6f4ec;
+	color: #9bc152;
+}
+
+.summary {
+	background: #9bc152;
+	color: #f6f4ec;
+	display: none;
+	padding: 1.5em 6%;
+	text-align: center;
+}
+.summary p {
+	font-size: 1.333em;
+	font-style: italic;
+	font-weight: 900;
+	letter-spacing: .01em;
+	line-height: 1.4em;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.course h2 {
+	color: #9bc152;
+	margin: 0 auto;
+	max-width: 44rem;
+}
+
+.course_head {
+	padding: 1.5rem 4%;
+	background-color: #282932;
+}
+
+.clipnotes {
+	height: 10rem;
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: 1rem 6% .5rem 0;
+}
+.clipnotes .highlight {
+	color: #9bc152;
+}
+
+.course_description {
+	display: none;
+}
+
+.course_information {
+	color: #f6f4ec;
+	line-height: 1.6em;
+	position: relative;
+	top: 50%;
+	padding: 1rem 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+	float: left;
+}
+
+.instructor_img {
+	border-radius: 50%;
+	float: left;
+	margin: 0 1.5rem 0 .5rem;
+	height: 100%;
+}
+
+.course_body {
+	max-width: 44rem;
+	margin: 0 auto 2.7012em;
+	padding: 0 6% 0;
+}
+
+footer {
+	background-color: #282932;
+	color: #6b6d85;
+	padding: 2em 4%;
+	text-align: center;
+}
+footer a {
+	color: #9bc152;
+	font-weight: 900;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #f6f4ec;
+}
+footer p {
+	display: inline-block;
+	line-height: 1.8em;
+	max-width: 22.5em;
+	padding: 0 2em;
+/* 	width: 50%; */
+}
+footer p:first-child {
+	border-right: 1px solid #f6f4ec;
+}
+footer span {
+	color: #f6f4ec;
+	margin: 0 5em;
+}
+
+.hidden {
+	display: none;
+}
+
+/* 	Clearfix */
+.group::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+@media (max-width: 1280px) {
+	.course h2 {
+		max-width: 37rem;
+	}
+	.course .clipnotes {
+		max-width: 37rem;
+	}
+	
+	.course_body {
+		max-width: 35rem;
+	}
+	
+	header {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	header h1 {
+		font-size: 4.292rem;
+	}
+	header h2 {
+		font-size: 1.23rem;
+		letter-spacing: .207rem;
+	}
+}
+
+@media (max-width: 840px) {
+	header {
+		padding-top: 4.751rem;
+		padding-bottom: 4.751rem;
+	}
+	
+	.course h2 {
+		max-width: 40rem;
+	}
+	.course .clipnotes {
+		max-width: 40rem;
+	}
+	
+	.instructor_img {
+		text-align: right;
+	}
+	.course_information {
+		text-align: left;
+	}
+	
+	.nav {
+		border-width: 1px;
+	}
+	.nav li {
+		width: 50%;
+	}
+	.nav li button {
+		border-width: 2px;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+}
+
+@media (max-width: 725px) {
+	header {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+	header h1 {
+		font-size: 3.5rem;
+	}
+
+	footer p {
+		display: block;
+		margin: 0 auto;
+	}
+	footer p:first-child {
+		border-right: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.course_information p {
+		text-indent: 1.5rem;
+	}
+	
+	h2 {
+		font-size: 1.7rem;
+	}
+	
+	.nav li {
+		border-width: 1px;
+	}
+
+	.instructor_img {
+		display: none;
+	}
+	
+	.course_body {
+		display: none;
+	}
+	
+	.course_head {
+		border-bottom: 2px solid #f6f4ec;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 640px) and (orientation: portrait) {
+	.course_body {
+		display: block;
+	}
+	
+}
+
+@media (min-width: 600px) and (max-width: 640px) and (orientation: landscape) {
+	.instructor_img {
+		display: inline-block;
+		margin-right: .5rem;
+	}
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+	header {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+@media (max-width: 500px) {
+	footer {
+		padding: 2em 1%;
+	}
+	footer p {
+		padding: 0;
+	}
+}
+
+@media (max-width: 360px) {
+	body {
+		font-size: 1.125rem;
+	}
+}
